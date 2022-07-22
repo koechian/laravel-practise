@@ -1,0 +1,114 @@
+#carousel {
+  width: 90vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  justify-content: space-around;
+}
+.deals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fe9900;
+  font-size: 50px;
+  color: white;
+  height: 85%;
+  width: 50%;
+}
+.carousel-item {
+  border-radius: 10px;
+  margin-left: 100px;
+}
+.bottom {
+  display: flex;
+  flex-direction: row;
+}
+.filters-side {
+  top: 10vh;
+  position: sticky;
+  height: 100%;
+  width: 30%;
+  padding: 20px;
+  padding-left: 50px;
+}
+.filters-side h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+#slider {
+  -webkit-appearance: none;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  background: rgba(181, 181, 181, 0.309);
+}
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #fe9900;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background 0.3s ease-in-out;
+}
+#slider::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+input {
+  margin-right: 10px;
+  margin-bottom: 11px;
+}
+input[type="range"] {
+  min-width: 58%;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+}
+.choices-side {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.card {
+  margin-top: 20px;
+  height: 266px;
+  width: 400px;
+  border-radius: 10px;
+  transition: ease-in-out 0.3s;
+}
+.card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.card img {
+  max-width: 100%;
+  max-height: 80%;
+  border-radius: 10px 10px 0px 0px;
+}
+.card span {
+  margin-left: 10px;
+}
+.card span:nth-of-type(2) {
+  color: rgb(142, 142, 142);
+}
+.top {
+  border-bottom: 20px;
+}
+.bottom h1 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 10px;
+}

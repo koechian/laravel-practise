@@ -1,6 +1,8 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Models\Resturant;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+Route::get('/resturants',function(){
+    return view('resturants',[
+        'heading'=>'Spots Near Me',
+        'listings'=>Resturant::all()
+        ]);
+});
+
+Route::get('/resturants/{id}',function($id){
+    return view('resturants',[
+        'heading'=>'Search',
+        'listings'=>Resturant::find($id)
+        ]);
 });

@@ -1,0 +1,85 @@
+.banner {
+  height: 25vh;
+  width: 94vw;
+  border-radius: 10px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.active-link {
+  text-decoration: underline;
+  color: #000000;
+}
+.options {
+  padding-top: 30px;
+}
+.options div {
+  margin-bottom: 13px;
+}
+.options div span {
+  font-size: 25px;
+}
+.options div span:hover {
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+  color: #ff9900;
+  text-decoration: underline;
+}
+.plus-icon {
+  width: 20px;
+  height: 20px;
+  transform: translateY(10%);
+  margin-left: 10px;
+  transition: ease-in-out 0.4s;
+}
+.plus-icon:hover {
+  cursor: pointer;
+  transform: rotate(-180deg);
+}
+.subtext {
+  font-size: 13px;
+  margin-top: 2px;
+  margin-left: 10px;
+  color: #9a9a9a;
+}
+.card div {
+  display: flex;
+  flex-direction: row;
+}
+.card:hover {
+  cursor: default;
+  transform: none;
+}
+#price-label {
+  font-size: 15px !important;
+}
+.band {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 94vw;
+}
+.band h1 {
+  font-size: 30px;
+  color: rgb(59, 59, 59);
+}
+.band p {
+  font-size: 15px;
+  color: #9a9a9a;
+}
+.band div:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  margin-left: 70%;
+}
+.band span {
+  text-decoration: underline;
+  font-size: 15px;
+  color: #9a9a9a;
+}
+.band span:hover {
+  cursor: pointer;
+}
